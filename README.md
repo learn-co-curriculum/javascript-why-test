@@ -14,12 +14,12 @@ first, where do we even begin? But we won't be scared off like that — that's n
 more unto the breach!
 
 The truth is, testing can be super helpful. It helps us verify that our code works as intended, and
-provides a nice starting point for other developers to dissect your code (and hopefully contribute).
-Having automated tests make you feel confident that our code is robust. Who doesn't like to feel
+provides a nice starting point for other developers to dissect our code (and hopefully contribute).
+Having automated tests makes us feel confident that our code is robust. Who doesn't like to feel
 confident? I like feeling confident about things.
 
-Another thing that most people new to testing seem to overlook is the time you _gain_ by writing
-tests. Sure, you have to spend some time setting up your initial testing infrastructure, and writing
+Another thing that most people new to testing seem to overlook is the time we _gain_ by writing
+tests. Sure, we have to spend some time setting up your initial testing infrastructure, and writing
 the tests themselves. That, however, pales in comparison to the time we gain by having a machine
 check our code for us, instead of doing it manually. Machines are orders of magnitude faster than
 humans (unless you're a Terminator), so the testing is done a lot quicker. This allows us to write
@@ -37,18 +37,18 @@ lazy by default. It's good to be lazy. Let the machines do the heavy lifting!
 
 Ideally, we start by writing tests first. Everyone thinks about the code they're going to write to
 a certain degree, but writing tests forces us to put this into words. We're effectively creating a
-spec for our code — we're writing down how it should behave. Doing this also makes you think about
-edge cases and error handling a little sooner, which is always good for the code quality.
+spec for our code — we're writing down how it should behave. Doing this also makes us think about
+edge cases and error handling a little sooner, which is always good for code quality.
 
-However, in the real world, writing tests isn't always the first thing that's done. Sometimes you
-already have a bunch of code — whether it's from an old project, code that was handed down to you,
+However, in the real world, writing tests isn't always the first thing that's done. Sometimes we
+already have a bunch of code — whether it's from an old project, code that was handed down to us,
 and so on. Writing tests *after* code has already been written is still a very valuable exercise: it
 allows us to more deeply understand the code. It also gives us the confidence to refactor things,
 since if the tests still pass, our program still works!
 
 Something you'll hear often is the 'Red, Green, Refactor' mantra. The 'Red' part stands for writing
-a test that fails initially (since you don't have any code at that point). Next, you make your tests
-pass (make them 'Green') in simplest possible way. When all tests pass, we can go ahead and refactor
+a test that fails initially (since you don't have any code at that point). Next, we make your tests
+pass (make them 'Green') in the simplest possible way. When all tests pass, we can go ahead and refactor
 things to either optimize for performance, to make things more legibile, or just to simply clean up
 our code.
 
@@ -68,8 +68,8 @@ function canCardBeLegallyPlayed(cardToBePlayed, cardOnTopOfDeck) {
   const isSameColor = cardToBePlayed.color === cardOnTopOfDeck.color;
   const isSameSymbol = cardToBePlayed.symbol === cardOnTopOfDeck.symbol;
   const isBlackBonusCard = cardToBePlayed.color === 'black';
-  
-  return isSameColor || isSameSymbol || isBlackBonusCard; 
+
+  return isSameColor || isSameSymbol || isBlackBonusCard;
 }
 ```
 
